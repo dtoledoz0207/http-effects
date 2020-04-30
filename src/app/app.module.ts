@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Rutas
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Modulos personalizados
 import { SharedModule } from './shared/shared.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
 
