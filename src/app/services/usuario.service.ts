@@ -7,11 +7,11 @@ import {map} from 'rxjs/operators';
 })
 export class UsuarioService {
 
-  private url = 'https://reqres.in/api';
+  private url = 'https://reqres.in/api3232';
 
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    return this.http.get(`${this.url}/users`).pipe(map(response => response['data']));
+    return this.http.get(`${this.url}/users?delay=3`).pipe(map(response => response['data']));
   }
 }
